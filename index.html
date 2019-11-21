@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator for IEEE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">>
+</head>
+<body>
+	<div class="main">
+		<form name = "myForm">
+			
+			<!-- For the display -->>
+			<input type="text" name="textview" class="textview" disabled="">
+
+		</form>
+
+		<table>
+
+			<!-- First row of buttons (7, 8, 9, multiply) -->
+			<tr>
+				<td><input type="button" class = "button number" value="7" onclick="insertNum(7)"></td>
+				<td><input type="button" class = "button number" value="8" onclick="insertNum(8)"></td>
+				<td><input type="button" class = "button number" value="9" onclick="insertNum(9)"></td>
+				<td><input type="button" class = "button op" value="x" onclick="insertOp('*')"></td>
+			</tr>
+
+			<!-- Second row of buttons (4, 5, 6, -)-->
+			<tr>
+				<td><input type="button" class = "button number" value="4" onclick="insertNum(4)"></td>
+				<td><input type="button" class = "button number" value="5" onclick="insertNum(5)"></td>
+				<td><input type="button" class = "button number" value="6" onclick="insertNum(6)"></td>
+				<td><input type="button" class = "button op" value="-" onclick="insertOp('-')"></td>
+			</tr>				
+
+			<!-- Third row of buttons (1, 2, 3, +)-->
+			<tr>
+				<td><input type="button" class = "button number" value="1" onclick="insertNum(1)"></td>
+				<td><input type="button" class = "button number" value="2" onclick="insertNum(2)"></td>
+				<td><input type="button" class = "button number" value="3" onclick="insertNum(3)"></td>
+				<td><input type="button" class = "button op" value="+" onclick="insertOp('+')"></td>
+			</tr>
+			
+			<!-- Fourth row of buttons (backspace, 0, decimal, divide) -->
+			<tr>
+				<td><input type="button" class = "button op" value="=" onclick="equal()"></td>
+				<td><input type="button" class = "button number" value="0" onclick="insertNum(0)"></td>
+				<td><input type="button" class = "button op" value="." onclick="decimal()"></td>
+				<td><input type="button" class = "button op" value="÷" onclick="insertOp('/')"></td>
+			</tr>
+
+
+			<!-- Fifth row of buttons (clear)-->
+			<tr>
+				<td><input type="button" class = "button op" value="C" onclick="cleardisp()"></td>
+				<td><input type="button" class = "button op" value="⌫" onclick="back()"></td>
+			</tr>	
+
+
+		</table>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>>
